@@ -1,8 +1,7 @@
 import axios from 'axios';
 
-// Create a universal axios instance
 const API = axios.create({
-  baseURL: '/api', // Shortened thanks to our proxy setup
+  baseURL: 'https://interview-trainer-backend-69ea.onrender.com/api',
 });
 
 // Interceptor to automatically attach the JWT token to protected routes
