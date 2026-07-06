@@ -1,0 +1,217 @@
+/* Dark Theme Auth Variables */
+:root {
+  --auth-bg: #0a0f1d; 
+  --auth-card-bg: #131a2e; 
+  --auth-text-main: #f8fafc; 
+  --auth-text-muted: #94a3b8; 
+  --auth-border: rgba(255, 255, 255, 0.06);
+  --auth-accent: #00f2fe; 
+  --auth-gradient: linear-gradient(135deg, #00f2fe 0%, #4facfe 50%, #6b11ff 100%);
+  --auth-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+  background-color: var(--auth-bg);
+  margin: 0;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Premium Branding Header Styling */
+.auth-brand-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  animation: revealBlur 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.auth-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.auth-cyber-logo {
+  width: 56px;
+  height: 56px;
+  filter: drop-shadow(0 0 12px rgba(0, 242, 254, 0.3));
+  animation: logoPulse 3s ease-in-out infinite;
+}
+
+.auth-brand-header h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin: 0 0 0.5rem 0;
+  background: var(--auth-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-tagline {
+  color: var(--auth-text-muted);
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+  max-width: 460px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+/* Glassmorphism Auth Card Panel with Slide Entry */
+.auth-card {
+  background: var(--auth-card-bg);
+  padding: 3rem 2.5rem;
+  border-radius: 20px;
+  box-shadow: var(--auth-shadow);
+  border: 1px solid var(--auth-border);
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideCardUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.15s forwards;
+  transition: var(--transition-smooth);
+}
+
+.auth-card:hover {
+  border-color: rgba(0, 242, 254, 0.15);
+  box-shadow: 0 30px 60px -15px rgba(0, 242, 254, 0.04), var(--auth-shadow);
+}
+
+.auth-card h2 {
+  margin: 0 0 0.5rem 0;
+  color: var(--auth-text-main);
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.auth-subtitle {
+  color: var(--auth-text-muted);
+  font-size: 0.95rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  line-height: 1.5;
+}
+
+/* Form Management Elements */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #94a3b8;
+  letter-spacing: 0.02em;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: #1a233d;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #fff;
+  transition: var(--transition-smooth);
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  outline: none;
+  background-color: #1e294a;
+  border-color: var(--auth-accent);
+  box-shadow: 0 0 0 4px rgba(0, 242, 254, 0.12);
+}
+
+/* Error Interface Displays */
+.error-banner {
+  background-color: rgba(255, 77, 77, 0.08);
+  color: #ff4d4d;
+  padding: 0.85rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255, 77, 77, 0.2);
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Neon Interaction Action Trigger Button */
+.auth-btn {
+  width: 100%;
+  padding: 1rem;
+  background: var(--auth-gradient);
+  color: #020617; 
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  box-shadow: 0 4px 20px rgba(0, 242, 254, 0.2);
+  margin-top: 0.5rem;
+}
+
+.auth-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(0, 242, 254, 0.35);
+  filter: brightness(1.1);
+}
+
+.auth-btn:active {
+  transform: translateY(0);
+}
+
+/* Interface Switches Toggles */
+.auth-toggle {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: var(--auth-text-muted);
+}
+
+.auth-toggle span {
+  color: var(--auth-accent);
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.auth-toggle span:hover {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(0, 242, 254, 0.6);
+}
+
+/* Cinematic Entry Keyframe Sequences */
+@keyframes revealBlur {
+  from { opacity: 0; filter: blur(8px); transform: scale(0.95); }
+  to { opacity: 1; filter: blur(0); transform: scale(1); }
+}
+
+@keyframes slideCardUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes logoPulse {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 12px rgba(0, 242, 254, 0.3)); }
+  50% { transform: scale(1.05); filter: drop-shadow(0 0 20px rgba(107, 17, 255, 0.5)); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
