@@ -2,6 +2,11 @@
 
 An advanced, full-stack Interview Trainer Agent powered by Retrieval-Augmented Generation (RAG) designed to prepare users for competitive job interviews. The application personalizes assessment structures dynamically based on candidate session data and ensures a holistic grading strategy.
 
+> ⚠️ **Evaluator Notice: Initial Load Time (Cold Start)**
+> Please note that the backend for this application is deployed on Render's free tier. If the server has been inactive for 15 minutes, the **first login or request may take 2 to 3 minutes** to process while the server wakes up. Once active, all subsequent generations and feedback pipelines will be instantaneous. Thank you for your patience!
+>
+> — *Himanshu Das Biswas*
+
 ## 🚀 Key Features
 * **Personalized Assessment Streams:** Dynamically builds context using the candidate's profile context (e.g., Himanshu Das Biswas) and injected system credentials.
 * **Holistic Assessment Mix:** Leverages the IBM Granite Foundational Model to generate a comprehensive mix of core technical questions, behavioral scenarios, industry expectations, and HR guidelines.
