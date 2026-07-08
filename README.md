@@ -17,7 +17,7 @@ An advanced, full-stack Interview Trainer Agent powered by Retrieval-Augmented G
 * **Frontend:** React.js, Lucide React Icons, Modern Bento-Grid Custom Midnight CSS UI
 * **Backend:** Node.js, Express.js, REST APIs
 * **Database:** MongoDB Atlas (Persistent session storage, history tracking, and user data lifecycle management)
-* **AI Engine & Cloud Services:** IBM Cloud Infrastructure, IBM watsonx.ai Runtime Environment
+* **AI Engine & Cloud Services:** IBM Cloud Infrastructure, IBM watsonx.ai Runtime Environment,IBM BoB
 * **Core Model:** IBM Granite Foundational Model (`granite-3-0-8b-instruct`)
 * **Cloud Architecture Foundations:** Built with cloud design methodologies aligned with AWS standards.
 
